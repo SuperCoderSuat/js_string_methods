@@ -3,10 +3,12 @@
  **************************************/
 console.log('%c String-Methods-Level-2_3', 'background: #222; color: lightgreen');
 
-function search() {
-    event.preventDefault;
-    const searchInput = document.body.querySelector("#search-input").value;
-    const source = document.body.querySelector("#articleContent").innerText;
 
-    document.body.querySelector("#article").innerHTML = source.replaceAll(searchInput, `<span class=highlight>${searchInput}</span>`);
+function highlighting() {
+
+    const input = document.body.querySelector("#search-input");
+    const articleText = document.body.querySelector("article").innerText;
+    const article = document.body.querySelector("article");
+
+    article.innerHTML = articleText.replaceAll(input.value, `<span>${input.value}</span>`)
 }
