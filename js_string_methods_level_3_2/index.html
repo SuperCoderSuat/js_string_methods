@@ -8,23 +8,26 @@
         html {
             font-family: sans-serif;
         }
+        .block {
+            display: block;
+        }
     </style>
 </head>
 <body>
     <h1>String-Methods-Level-3_2</h1>
     <form>
-        <label for="">Zu trennende Zeichenkette</label>
-        <input type="text" name="" id="">
-        <label for="">Woran trennen?</label>
-        <input type="text" name="" id="">
+        <label class="block" for="">Zu trennende Zeichenkette</label>
+        <input type="text" name="" id="inputText">
+        <label class="block" for="">Woran trennen?</label>
+        <input type="text" name="" id="inputTrim">
         <input type="radio" name="davor_danach" id="davor">
-        <label for="">davor</label>
+        <label for="">Davor</label>
         <input type="radio" name="davor_danach" id="danach">
-        <label for="">danach</label>
-        <input type="submit" value="klick mich" onclick="davorDanach()">
+        <label for="">Danach</label>
+        <input class="block" type="submit" value="klick mich" onclick="trimText()">
     </form>
-    <p></p>
-    <p></p>
+    <p id="outputBefore"></p>
+    <p id="outputAfter"></p>
 
     <script src="./assets/js/main.js"></script>
 </body>
